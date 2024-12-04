@@ -3,10 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/dist/output.css" rel="stylesheet">
-  <title>My Tailwind Website</title>
+  <title>Sports Website</title>
+  <link href="./dist/output.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100 text-gray-800">
-  <h1 class="text-4xl font-bold text-center mt-10">Hello, Tailwind!</h1>
+<body class="bg-gray-100 font-sans">
+  
+  <!-- Header -->
+  <header class="bg-blue-700 text-white">
+    <div class="max-w-screen-xl mx-auto p-5 flex justify-between items-center">
+      <h1 class="text-3xl font-bold">SportsZone</h1>
+      <nav>
+        <ul class="flex space-x-8 text-lg">
+          <li><a href="#" class="hover:text-yellow-500">Home</a></li>
+          <li><a href="#events" class="hover:text-yellow-500">Events</a></li>
+          <li><a href="#contact" class="hover:text-yellow-500">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-cover bg-center h-screen flex items-center justify-center text-center text-white" style="background-image: url('https://via.placeholder.com/1920x1080?text=Sports+Event');">
+    <div class="bg-black bg-opacity-50 p-8">
+      <h2 class="text-5xl font-bold mb-4">Join the Excitement!</h2>
+      <p class="text-xl mb-8">Stay updated with the latest sports events and news.</p>
+      <a href="#events" class="bg-yellow-500 hover:bg-yellow-600 text-black py-2 px-6 rounded-full text-lg">Discover Events</a>
+    </div>
+  </section>
+
+  <!-- Events Section -->
+  <section id="events" class="py-16 bg-white">
+    <div class="max-w-screen-xl mx-auto text-center">
+      <h2 class="text-4xl font-semibold mb-10">Upcoming Sports Events</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-gray-200 p-6 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-semibold mb-4">Football Championship</h3>
+          <p class="mb-4">A thrilling football tournament featuring top teams.</p>
+          <a href="#" class="text-blue-500 hover:text-blue-700">Learn More</a>
+        </div>
+        <div class="bg-gray-200 p-6 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-semibold mb-4">Tennis Open</h3>
+          <p class="mb-4">Join us for the biggest tennis event of the year.</p>
+          <a href="#" class="text-blue-500 hover:text-blue-700">Learn More</a>
+        </div>
+        <div class="bg-gray-200 p-6 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-semibold mb-4">Basketball League</h3>
+          <p class="mb-4">Exciting basketball matches with top players.</p>
+          <a href="#" class="text-blue-500 hover:text-blue-700">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-blue-700 text-white">
+    <div class="max-w-screen-xl mx-auto text-center">
+      <h2 class="text-4xl font-semibold mb-6">Get in Touch</h2>
+      <p class="text-xl mb-8">Have any questions? Contact us to get more information about events, tickets, and more.</p>
+      <form action="#" class="space-y-6">
+        <input type="text" placeholder="Your Name" class="w-full p-4 rounded-md text-lg" required>
+        <input type="email" placeholder="Your Email" class="w-full p-4 rounded-md text-lg" required>
+        <textarea placeholder="Your Message" class="w-full p-4 rounded-md text-lg" rows="4" required></textarea>
+        <button type="submit" class="bg-yellow-500 hover:bg-yellow-600 py-3 px-6 rounded-full text-lg text-black">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-700 text-white py-4 text-center">
+    <p>&copy; 2024 SportsZone. All Rights Reserved.</p>
+  </footer>
+
 </body>
 </html>
